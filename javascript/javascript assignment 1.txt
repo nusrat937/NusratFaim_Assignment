@@ -1,0 +1,384 @@
+//1
+ var n = window.prompt("Enter a no. ")
+let result = 0;
+var i;
+for(i=0;i<=n;i++)
+{
+    result = result +i;
+}
+document.write("The result is :"+result);
+
+//2
+ var n = window.prompt("Enter a no. ")
+let result = 0;
+var i;
+for(i=0;i<=n;i++)
+{
+    if(i%3 ===0 || i%5 ===0)
+
+{
+    result = result +i;
+}
+}
+
+document.write("The result is :"+result);
+
+//3
+ function check(n){
+    if(n%2 ===0){
+        document.write("No is even");
+    }
+    document.write("No is Odd");
+}
+check(6);
+
+//4
+var a1=prompt("enter the no of flips");
+function p(n)
+{
+    var d=prompt("enter the no of times head appears");
+    document.write("the ratio:"+a1/d+ "<br>");
+}
+p(a1);
+
+//5
+var year =window.prompt("Enter year");
+
+var count =0;
+while(count<=20){
+    if(year % 4 === 0 && (year % 100 !== 0 ||  year % 400 === 0))
+    {
+        
+        document.write(year+"\n");
+        year++;
+        count++;
+    }
+   else{
+       year++;
+   }
+}
+
+//6
+
+function printFrame(arr) { 
+    function fill (str, length, char) {
+     return (str.length < length) ? fill(str + char, length, char) : str; 
+    } 
+    let size = arr.map((str) => 
+    { return str.length; }) .reduce((a, b) => 
+    { return Math.max(a, b); 
+    }); 
+    let line = fill('', size + 4, '*'); 
+    arr = arr.map((element) => 
+    { return '* '+ fill(element, size, ' ') + ' *'; }) 
+    arr.unshift(line); 
+    arr.push(line); 
+    return arr.join("<br>");; 
+    } 
+    document.write(printFrame(["Hello", "World", "in", "a", "frame"])); 
+
+//7
+currency();
+
+function currency()
+{
+    var amt = prompt("Enter the value in dollars:");
+    document.write((amt*74.28)+" INR (Indian Rupees) <br>" + (amt*109.14)+" Yen (Japanese Yen) <br>" + (amt*0.84) + " Euro (Euro) <br>"
+                    + (amt*0.72)+ " Pound sterling (Pound sterling) <br>");
+}
+
+//8
+var a = ['a', 'b', 'c'];
+
+var b = [1, 2, 3];
+
+var c = a.concat(b);
+
+document.write(c);
+
+
+//9
+ var a = ['a','b','c'];
+var b = [1, 2, 3];
+
+var newList = function(a,b)
+{
+  var l = a.length+b.length;
+  var r = [];
+  var j=0,k=0;
+  for(let i=0; i<l;i++) {
+    if(i%2==0) {
+      r[i]=a[j++];
+    } else {
+      r[i]=b[k++];
+    }
+  }
+  return r;
+}
+
+document.write(newList(a,b));
+
+//10 function fab(n)
+{let n1 = 0, n2 = 1, nextTerm;
+
+document.write('Fibonacci Series:');
+
+for (let i = 1; i <= n; i++) {
+    document.write(n1);
+    nextTerm = n1 + n2;
+
+    n1 = n2;
+    n2 = nextTerm;
+}
+}
+fab(100);
+
+//11 var a=[];
+for (var i=0; i<10; i++){
+a.push(Math.round(Math.random()*10));}
+document.write(a);
+var c=a.reverse();
+document.write("<br />"+c);
+ans 4 function coinflip(){
+    return(Math.random() < 0.3)?'Heads':'Tails';
+    }
+    const a = parseInt(prompt("Enter the no of flips"));
+    var counthead=0;
+  for(var i=0;i< a;i++)
+  {
+      if(coinflip()==='Heads'){
+          count++;
+      }
+  }
+  document.write("Heads Racounttio of" +(a)+"->"+count);
+
+
+//12
+
+function Longesttoken(str)
+{
+var res ="",
+    k = 0.
+    lidt=[];
+ for(i=0;i<str.length;i++)
+{
+if(str[i] !='a' && str[i] != 'b'
+)
+{
+var temp = "";
+for(j=1;j<str.length;j++)
+{
+temp+=str[j];
+if(str[j + 1]=='a' || str[j + 1] == 'b')
+{
+list.push(temp);
+break;
+}
+}
+}else{ continue;
+}
+}
+for( k=1;k<list.length;k++)
+{
+var maxi=list[0].length;
+if(max<list[k].length)
+{
+res=list[k];
+}
+document.write(res);
+}
+longesttoken("abbbabcdefggggbcda");
+
+//13 [1] var n = window.prompt("Enter a no. ")
+let result = 0;
+var i;
+for(i=0;i<=n;i++)
+{
+    result = result +i;
+}
+document.write("The result is :"+result);
+[2] var n = window.prompt("Enter a no. ")
+let result = 0;
+var i=1;
+while(i<=n)
+{
+    result = result +i;
+    i++;
+}
+document.write("The result is :"+result);
+[3] var n = window.prompt("Enter a no. ")
+let result = 0;
+var i=1;
+do
+{
+    result = result +i;
+    i++;
+}while(i<=n);
+document.write("The result is :"+result);
+
+//14
+find();
+functionfind()
+{
+    var a=[];
+for (var i=0; i<20; i++){
+a.push(Math.round(Math.random()*20));}
+document.write(a);
+
+    var max = Math.max(...a);
+    var min = Math.min(...a);
+    var ev,od,avg,sum=0;
+    for(i=0;i<a.length;i++)
+    {   
+        sum +=a[i];
+        if(a[i]%2==0) ev++;
+        else od++;
+    }
+    
+    document.write("maximum=" + max  + " <br>minimum=" + min + "<br>sum=" + sum + "<br>average=" + sum/a.length+ "<br>");
+    if(ev>od)
+    document.write("Even");
+    else
+    document.write("Odd");
+}
+
+//15 [a] var a=[];
+for (var i=0; i<20; i++){
+a.push(Math.round(Math.random()*20));}
+document.write(a);
+
+    
+    for(var i = 0; i < 20 - 1; i++){
+      for(var j = 0; j <= 20 - i - 1; j++){
+          //Swap the numbers
+          if(a[j] > a[j+1]){
+            [a[j], a[j+1]] = [a[j+1], a[j]];
+          }
+      }
+    }
+    
+    document.write("<br>"+a);
+
+//16
+ function createTable()
+{
+rn = window.prompt("Input number of rows");
+cn = window.prompt("Input number of columns");
+  
+ for(var r=0;r<parseInt(rn,10);r++)
+  {
+   var x=document.getElementById('myTable').insertRow(r);
+   for(var c=0;c<parseInt(cn,10);c++)  
+    {
+     var y=  x.insertCell(c);
+     y.innerHTML=r+c; 
+    }
+   }
+}
+
+//17
+ function rotate(lst, rotateBy) {
+    const res = [];
+    for (let i = rotateBy % lst.length, len = lst.length; res.length < len; i = ++i % len) {
+      res.push(lst[i]);
+    }
+    return res;
+  }
+  document.write(rotate([1,2,3,4,5], 3));
+
+//18
+var str="My nasme is nusrat";
+function translatePigLatin(str) {
+    let vowels = ['a', 'e', 'i', 'o', 'u'];
+    let newStr = "";
+    if (vowels.indexOf(str[0]) > -1) {
+        newStr = str + "way";
+        return newStr;
+    } else {
+        let firstMatch = str.match(/[aeiou]/g) || 0;
+        let vowel = str.indexOf(firstMatch[0]);
+        newStr = str.substring(vowel) + str.substring(0, vowel) + "ay";
+        return newStr;
+    }
+}
+
+//19
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+<title> JavaScript Calculator </title>
+<style>
+h1 {
+	text-align: center;
+	padding: 23px;
+	background-color: skyblue;
+	color: white;
+	}
+#clear{
+width: 270px;
+border: 3px solid gray;
+	border-radius: 3px;
+	padding: 20px;
+	background-color: red;
+}
+.formstyle
+{
+width: 300px;
+height: 530px;
+margin: auto;
+border: 3px solid skyblue;
+border-radius: 5px;
+padding: 20px;
+}
+input
+{
+width: 20px;
+background-color: green;
+color: white;
+border: 3px solid gray;
+	border-radius: 5px;
+	padding: 26px;
+	margin: 5px;
+	font-size: 15px;
+}
+#calc{
+width: 250px;
+border: 5px solid black;
+	border-radius: 3px;
+	padding: 20px;
+	margin: auto;
+}
+</style>
+</head>
+<body>
+<h1> Calculator Program in JavaScript </h1>
+<div class= "formstyle">
+<form name = "form1">
+  <input id = "calc" type ="text" name = "answer"> <br> <br>
+  <input type = "button" value = "1" onclick = "form1.answer.value += '1' ">
+  <input type = "button" value = "2" onclick = "form1.answer.value += '2' ">
+  <input type = "button" value = "3" onclick = "form1.answer.value += '3' ">
+   <input type = "button" value = "+" onclick = "form1.answer.value += '+' ">
+  <br> <br>
+  <input type = "button" value = "4" onclick = "form1.answer.value += '4' ">
+  <input type = "button" value = "5" onclick = "form1.answer.value += '5' ">
+  <input type = "button" value = "6" onclick = "form1.answer.value += '6' ">
+  <input type = "button" value = "-" onclick = "form1.answer.value += '-' ">
+  <br> <br>
+  <input type = "button" value = "7" onclick = "form1.answer.value += '7' ">
+  <input type = "button" value = "8" onclick = "form1.answer.value += '8' ">
+  <input type = "button" value = "9" onclick = "form1.answer.value += '9' ">
+  <input type = "button" value = "" onclick = "form1.answer.value += '' ">
+  <br> <br>
+  <input type = "button" value = "/" onclick = "form1.answer.value += '/' ">
+  <input type = "button" value = "0" onclick = "form1.answer.value += '0' ">
+    <input type = "button" value = "." onclick = "form1.answer.value += '.' ">
+  <input type = "button" value = "=" onclick = "form1.answer.value = eval(form1.answer.value) ">
+  <br> 
+  <input type = "button" value = "Clear All" onclick = "form1.answer.value = ' ' " id= "clear" >
+  <br>   
+</form>
+</div>
+</body>
+</html>
+    

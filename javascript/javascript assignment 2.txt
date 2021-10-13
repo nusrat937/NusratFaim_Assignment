@@ -1,0 +1,129 @@
+PART 1
+
+//1
+function composedValue(square, double, x){
+    document.write("Value is:"+square(double(x)));
+
+}
+function square(x){
+    return (x*x);
+
+}
+function double(x){
+    return (x*2);
+}
+
+composedValue(square,double,6);
+
+//2 
+function compose(f1, f2)
+{
+     function f3(x){
+           document.write("the value is: "+f1(f2(x)));
+    }
+    return f3;
+}
+    function f1(x){
+        return (x*x*4);
+    
+    }
+    function f2(x){
+        return (x*x*2);
+    }
+   compose(f1, f2) (2);
+
+//3
+var a = [1,3,5,4,2];
+find(a,test);
+function find(a,test)
+{
+    for(i=0;i<a.length; i++)
+    {
+        if(test(a[i]) == true)
+        {
+            document.write(a[i]);
+            break;
+        }
+    }
+
+}
+
+function test(n)
+{
+    if( n%2==0)
+        return true;
+    else
+        return false;
+}
+
+//4
+
+var a=[10,20,30,40,50];
+map(a,f1);
+function map(a,f1)
+{
+    var b =[];
+    for(i=0;i<a.length;i++)
+    b.push(f1(a[i]));
+    document.write(b);
+}
+function f1(n)
+{
+  return n*n;
+}
+
+
+PPART-2
+
+//1
+i=0;
+var a = [1,4,3,2,5];
+find();
+function find()
+{
+    if(test(a[i])== true)
+    {
+        document.write(a[i]);
+        return;
+    }
+    else{
+        i++;
+        find();
+    }
+}
+function test(n)
+{
+    if( n%2==0)
+        return true;
+    else
+        return false;
+}
+
+//2
+i=0;
+var a=[1,2,3,4,5];
+document.write(map());
+function map()
+{
+    if(i == a.length)
+    return;
+    else
+    {
+      var b =[];
+      for(i=0;i<a.length;i++)
+      b.push(f1(a[i]));
+      document.write(b);
+      map();
+   }
+}
+function f1(n)
+{
+  return n*n;
+}
+
+
+
+
+
+
+    
