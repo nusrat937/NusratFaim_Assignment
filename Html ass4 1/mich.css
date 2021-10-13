@@ -1,0 +1,121 @@
+.container{
+    text-align: center;
+    font-family:'Pacifico', cursive;
+    padding: 0;
+    margin: 0;
+    
+}
+.a{
+    font-size: 20px;
+    text-align: center;
+    font-family:'Pacifico', cursive;
+   
+}
+.b{
+    font-size: 40px;
+}
+.contains{
+    width: 500px;
+    height: 500px;
+    align-content: center;
+}
+.thumbnail{
+    text-align: center;
+}
+
+.subsection-header {
+    line-height: 120px;
+    padding-left: 30px;
+    font-size: 50px;
+    color: #ececec;
+    font-weight: bold;
+    height: 120px;
+    width: 768px;
+}
+#main-content {
+    height: 700px;
+    width: 800px;
+    background-color: white;
+    position: relative;
+    top: 25px;
+    left: 10px;
+    font-family: 'Dosis' , sans-serif;
+}
+
+.event-date-first-child {
+    border-top: 1px solid #ccc;
+    margin-top: 0;
+}
+
+.event-date {
+    width: 100px;
+    height:7px;
+    text-align: center;
+    line-height: 26px;
+    float: left;
+    font-size: 14px;
+    border-top: 2px solid #ccc;
+    margin: -1px 0 0 0;
+    padding: 4px 5px 6px 0;
+    clear: left;
+    font-weight: bold;
+}
+.event-desc-nth-child {
+    border-bottom: 1px solid #ccc;
+}
+.cos{
+    text-align: left;
+}
+#side-content {
+    height: 500px;
+    width: 290px;
+    background-color: white;
+    float: right;
+    clear: both;
+    position: relative;
+    bottom: 300px;
+}
+.info {
+    font-size: 90%;
+    font-family: 'Dosis' , sans-serif;
+    position: relative;
+    margin-bottom: 2em;
+    text-align: center;
+    background-color: white;
+}well {
+	border: 2px solid black !important;
+	background:url(http://htc-wallpaper.com/wp-content/uploads/2015/06/Paper-pattern.jpg) !important;
+	background-repeat: no-repeat !important;
+	background-size: cover !important;
+	font-size: 21px;
+	font-weight: 120px;
+	font-family: 'Cuprum', sans-serif;
+}
+a {
+    color:dodgerblue;
+    text-decoration:none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: blue;
+}
+#footer {
+    background-color:lightgrey;
+    height: 200px;
+}
+#quote {
+    font-family: 'Pacifico', cursive;
+    text-align:center;
+    font-size: 24px;
+    position: relative;
+    top:5px;
+    left: 10px;
+}
+body{
+    background-color:lightgrey;
+}
+
+
+
+
